@@ -1,123 +1,138 @@
+:root {
+    --main-bgcolor: black;
+    --main-ftcolor: white;
+}
+
 body {
-  margin: 0px;
+    margin: 0px;
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 46px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 46px;
 }
 
 nav {
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--main-bgcolor);
+    color: var(--main-bftcolor);
+    padding: 16px;
 }
 
 .bar {
-  width: 100%;
-  overflow: hidden;
-  background-color: black;
-  color: white;
-  padding-bottom: 5px;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--main-bgcolor);
+    color: var(--main-ftcolor);
+    padding-bottom: 5px;
 }
 
-#jumbotron {
-  max-width: 100%;
+.jumbotron {
+    max-width: 100%;
 }
 
 a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: var(--main-ftcolor);
 }
 
-.bar > a {
-  padding: 12px 24px;
-  float: left;
+p {
+    color: var(--main-ftcolor);
+}
+
+.bar>a {
+    padding: 12px 24px;
+    float: left;
 }
 
 .bar-block .bar-item {
-  width: 100%;
-  display: block;
-  padding: 12px 24px;
-  text-align: left;
-  border: none;
-  white-space: normal;
-  float: none;
-  outline: 0;
+    width: 100%;
+    display: block;
+    padding: 12px 24px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
 }
 
 .right {
-  float: right !important;
+    float: right !important;
 }
 
 .menu-mobile {
-  background-color: black;
-  color: white;
-  display: none;
-  top: 0;
-  position: fixed;
-  width: 100%;
+    background-color: var(--main-bgcolor);
+    color: var(--main-ftcolor);
+    display: none;
+    top: 0;
+    position: fixed;
+    width: 100%;
 }
 
 figcaption h4 {
-  margin-top: 0px;
-  text-align: center;
+    margin-top: 0px;
+    text-align: center;
 }
 
 .w3-display-bottomleft {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 @media screen and (max-width: 640px) {
-  figure img {
-    width: 100%;
-  }
-  .hide-mobile {
-    display: none;
-  }
+    figure img {
+        width: 100%;
+    }
+    .hide-mobile {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 641px) and (max-width: 768px) {
-  figure img {
-    width: 100%;
-    max-width: 304px;
-  }
-  .hide-mobile {
-    display: none;
-  }
+    figure img {
+        width: 100%;
+        max-width: 304px;
+    }
+    .hide-mobile {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 769px) {
-  figure img {
-    width: 100%;
-    max-width: 261px;
-  }
-  .hide-desktop {
-    display: none;
-  }
+    figure img {
+        width: 100%;
+        max-width: 261px;
+    }
+    .hide-desktop {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1280px) {
-  figure img {
-    width: 100%;
-    max-width: 240px;
-  }
-  .hide-desktop {
-    display: none;
-  }
+    figure img {
+        width: 100%;
+        max-width: 240px;
+    }
+    .hide-desktop {
+        display: none;
+    }
 }
 
 .show {
-  display: block !important;
+    display: block !important;
 }
 
 .hover-red:hover {
-  color: #fff !important;
-  background-color: #f44336 !important;
+    color: #fff !important;
+    background-color: #f44336 !important;
 }
