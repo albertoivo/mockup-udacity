@@ -1,3 +1,9 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 46px;
+}
+
 nav {
     position: fixed;
     width: 100%;
@@ -15,11 +21,6 @@ nav {
 .bar>a {
     padding: 12px 24px;
     float: left;
-    /*width: auto;
-    border: none;
-    display: block;
-    outline: 0;
-    white-space: normal;*/
 }
 
 .bar-block .bar-item {
@@ -31,4 +32,37 @@ nav {
     white-space: normal;
     float: none;
     outline: 0;
+}
+
+section {
+    margin: 10px;
+}
+
+@media screen and (max-width: 640px) {
+    img {
+        width: 100%;
+    }
+    p {
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+    img {
+        width: 100%;
+        max-width: 364px;
+    }
+    p {
+        background-color: yellow;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    img {
+        width: 100%;
+        max-width: 320px;
+    }
+    p {
+        background-color: blue;
+    }
 }
