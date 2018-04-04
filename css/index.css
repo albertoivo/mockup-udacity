@@ -83,12 +83,6 @@ figcaption h4 {
     text-align: center;
 }
 
-.w3-display-bottomleft {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
 @media screen and (max-width: 640px) {
     figure img {
         width: 100%;
