@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Nossas Rotas</title>
+
     <meta charset="UTF-8">
     <meta name="description" content="Udacity mini project">
     <meta name="keywords" content="HTML, CSS, JavaScript, Nossas Rotas">
@@ -10,63 +11,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="./js/utils.js"></script>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <header>
-        <nav>
-            <div class="bar">
-                <a class="w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <a href="#">HOME</a>
-                <a href="#band" class="w3-hide-small">BAND</a>
-                <a href="#tour" class="w3-hide-small">TOUR</a>
-                <a href="#contact" class="w3-hide-small">CONTACT</a>
-                <a href="#" class="w3-hover-red w3-hide-small w3-right">Login</a>
-            </div>
 
-            <!-- Navbar on small screens -->
-            <div id="navDemo" class=" bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-                <a href="#band" class="bar-item button">BAND</a>
-                <a href="#tour" class="bar-item button ">TOUR</a>
-                <a href="#contact" class="bar-item button ">CONTACT</a>
-                <a href="#" class="bar-item button ">MERCH</a>
-                <a href="#" class="bar-item button w3-hover-red">Login</a>
-            </div>
-        </nav>
+    <nav>
+        <div class="bar">
+            <a class="hide-desktop right" href="javascript:void(0)" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#">HOME</a>
+            <a href="#band" class="hide-mobile">BAND</a>
+            <a href="#tour" class="hide-mobile">TOUR</a>
+            <a href="#contact" class="hide-mobile">CONTACT</a>
+            <a href="#" class="hover-red hide-mobile right">Login</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="bar-mobile" class="bar-block hide-desktop menu-mobile" style="margin-top:46px">
+            <a href="#band" class="bar-item button">BAND</a>
+            <a href="#tour" class="bar-item button">TOUR</a>
+            <a href="#contact" class="bar-item button">CONTACT</a>
+            <a href="#" class="bar-item button">MERCH</a>
+            <a href="#" class="bar-item button hover-red">Login</a>
+        </div>
+    </nav>
+
+    <header>
+        <img id="jumbotron" src="img/northern-light.jpg">
     </header>
 
     <div class="container">
 
         <section>
-            <img src="img/finger.jpg">
-            <p>oi oi oi oi oi</p>
+            <figure>
+                <img src="img/finger.jpg" alt="An awesome picture">
+                <figcaption>
+                    <h4>oi oi oi oi oi</h4>
+                </figcaption>
+            </figure>
         </section>
         <section>
-            <img src="img/finger.jpg">
-            <p>oi oi oi oi oi</p>
+            <figure>
+                <img src="img/finger.jpg" alt="An awesome picture">
+                <figcaption>
+                    <h4>oi oi oi oi oi</h4>
+                </figcaption>
+            </figure>
         </section>
         <section>
-            <img src="img/finger.jpg">
-            <p>oi oi oi oi oi</p>
+            <figure>
+                <img src="img/finger.jpg" alt="An awesome picture">
+                <figcaption>
+                    <h4>oi oi oi oi oi</h4>
+                </figcaption>
+            </figure>
         </section>
         <section>
-            <img src="img/finger.jpg">
-            <p>oi oi oi oi oi</p>
+            <figure>
+                <img src="img/finger.jpg" alt="An awesome picture">
+                <figcaption>
+                    <h4>oi oi oi oi oi</h4>
+                </figcaption>
+            </figure>
         </section>
         <section>
-            <img src="img/finger.jpg">
-            <p>oi oi oi oi oi</p>
+            <figure>
+                <img src="img/finger.jpg" alt="An awesome picture">
+                <figcaption>
+                    <h4>oi oi oi oi oi</h4>
+                </figcaption>
+            </figure>
         </section>
         <section>
-            <img src="img/finger.jpg">
-            <p>oi oi oi oi oi</p>
+            <figure>
+                <img src="img/finger.jpg" alt="An awesome picture">
+                <figcaption>
+                    <h4>oi oi oi oi oi</h4>
+                </figcaption>
+            </figure>
         </section>
 
     </div>
